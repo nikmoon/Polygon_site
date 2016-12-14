@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'polygon/polygon.css' %}">
+    <title>Тестирование</title>
+</head>
+<body>
+    <div id="content">
+        <h5><a href="/">На главную</a> </h5>
+
+        <canvas id="polygon" width="400" height="400">
+            Ваш браузер не поддерживает тег &lt;canvas&gt; или отключен javascript
+        </canvas>
+
+        <input type="range" id="ptCountRange" min="10" max="30" value="15">
+        <input type="text" id="ptCount" value="15" size="5">
+        <input type="button" id="getPolygon" value="Сформировать новый полигон">
+    </div>
+
+    <script src="{% static 'polygon/polygon.js' %}"></script>
+</body>
+</html>

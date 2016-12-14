@@ -1,0 +1,12 @@
+
+div#content {
+    width: 500px;
+    background-color: #CCCCCC;
+    margin: auto;
+}
+
+canvas#polygon {
+    display: block;
+    margin: auto;
+    background-color: #DDDDDD;
+}
